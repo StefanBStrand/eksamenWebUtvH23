@@ -1,4 +1,11 @@
 .placeholder-img {
   width: 400px;
   height: 400px;
+}
+
+.yellow-lines {
+  display: block;
+  height: 5px;
+  background-color: #e6bd43;
+  width: 50%;
 }/*# sourceMappingURL=style.css.map */
