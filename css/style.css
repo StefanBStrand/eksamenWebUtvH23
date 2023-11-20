@@ -10,4 +10,16 @@
   background-color: #e6bd43;
   width: 50%;
   margin: 10px;
+}
+
+footer {
+  background-color: #252525;
+  color: white;
+}
+footer ul li {
+  display: inline-block;
+  margin: 10px;
+}
+footer ul li i {
+  color: white;
 }/*# sourceMappingURL=style.css.map */
