@@ -81,7 +81,29 @@
         </figure>
       </section>
 
-      <section></section>
+      <section id="contact-form">
+        <h3>Contact us</h3>
+        <h4>Send us a message</h4>
+        <form action="example.php" method="GET">
+          <!--action and method just for examples. We will only use static forms (no actions). name attribute also used as example for learning. -->
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Ola Nordmann" />
+
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Branding"
+          />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder=""></textarea>
+
+          <button type="button" class="submit">Send message</button>
+          TODO: review HTML on all buttons/links - needs to be coherent
+        </form>
+      </section>
       <section id="contact-information"></section>
     </main>
     <footer>

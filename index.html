@@ -42,7 +42,7 @@
         </p>
         TODO: add background image in SASS for intro-section!
         <a href="about.html">
-          <h3 id="about-our-service">Read more about our services</h3>
+          <p id="about-our-service">Read more about our services</p>
         </a>
       </section>
       <section id="subheading-text">
@@ -66,7 +66,7 @@
           varius, at elementum tellus semper.
         </p>
         <a href="about.html">
-          <h3 id="read-more-about-us">Read more about us</h3>
+          <p id="read-more-about-us">Read more about us</p>
         </a>
       </article>
 
@@ -94,14 +94,15 @@
         <form>
           <label for="email" class="not-visible-label">Email</label>
           TODO: Fix SASS so the Email text is not visible - it is just for
-          accessibility(Screen readers).
+          accessibility(Screen readers) Or, can the tag just be empty?.
           <input
             type="email"
             id="email"
             name="email"
             placeholder="nora@epost.no"
           />
-          <button type="submit" id="submit">Sign me up!</button>
+          <button type="button" class="submit">Sign me up!</button>
+          TODO: review HTML on all buttons/links - needs to be coherent
         </form>
       </section>
     </main>
