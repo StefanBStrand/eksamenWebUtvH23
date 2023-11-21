@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    TODO: Add title attributes for page
+    <!--TODO: Add title attributes for page-->
     <title>Eksamen</title>
 
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    TODO: Import google font, Roboto, add this (sans sarif)
+    <!--TODO: Import google font, Roboto, add this (sans sarif): This is donein SASS file now. Need to do it in html too?-->
 
     <script
       src="https://kit.fontawesome.com/684fb3ed8c.js"
@@ -29,7 +29,7 @@
           <li><a href="about.html">About</a></li>
           <li><a href="about.html">Contact</a></li>
         </ul>
-        TODO: Style menu properly!
+        <!--TODO: Style menu properly!-->
       </nav>
     </header>
     <main>
@@ -101,10 +101,31 @@
           <textarea id="message" name="message" placeholder=""></textarea>
 
           <button type="button" class="submit">Send message</button>
-          TODO: review HTML on all buttons/links - needs to be coherent
+          <!--TODO: review HTML on all buttons/links - needs to be coherent-->
         </form>
       </section>
-      <section id="contact-information"></section>
+
+      <section id="contact-information">
+        <h3>Contact Information</h3>
+        <p>
+          Duis dui enim, consequat non sem sed, egestas condimentum nisl.
+          Suspendisse pulvinar, sapien id condimentum egestas, erat sem ultrices
+          magna, sed ullamcorper neque turpis at tellus. Donec sed mi nisl.
+          Vivamus fringilla ullamcorper libero id vulputate. Donec purus enim,
+          pretium vel placerat pretium, consequat ut ipsum.
+        </p>
+        <!--CONTINUE HERE, ON THIS SECTION, CONTACT INFO!-->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1882765434264!2d11.350228377367092!3d59.129250227019796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2s%C3%98stfold%20University%20College!5e0!3m2!1sen!2sno!4v1700570387317!5m2!1sen!2sno"
+          width="100%"
+          height="400px"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <!--TODO: Fix properties so that map is full widht and is responsive!-->
+      </section>
     </main>
     <footer>
       <a href="index.html">
@@ -132,8 +153,8 @@
             </a>
           </li>
         </ul>
-        TODO: Fix styling on arrow? (fixed?) and also fix anchor tag position,
-        needs to go up top.
+        <!--TODO: Fix styling on page jump arrow? (fixed?) and also fix anchor tag position,
+        needs to go up top. also, how to get it to show once starting to scroll down instead of being stuck at the bottom?-->
       </nav>
     </footer>
   </body>
