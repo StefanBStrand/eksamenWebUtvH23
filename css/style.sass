@@ -7,8 +7,52 @@ $black: #000
 $white: #fff
 
 
+
 body
+    display: grid
+    grid-template-columns: 1fr
     font-family: Roboto, sans-serif
+
+#intro-section
+    position: relative  // LMS webtricks /ChatGPT - any absolutely position child elements will be positioned relative to the intro-section
+    background-image: url(/resources/img/background_img_index.png)  // LMS webtricks. 
+    background-size: cover  // LMS Webtricks
+    background-position: center  // LMS webtricks
+    min-height: 300px
+    &::before  // LMS webtricks - targets parent selector, in this case #intro-section. 
+        content: "" // ChatGPT - 
+        position: absolute  // LMS webtricks /ChatGPT as mentioned above - this will position the overlay relative to intro-section
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        background: rgba(255,255 ,255 ,0.65 ) 
+        z-index: 0  // sets overlay behind any content inside the section.
+    h1, p, a
+        position: relative
+        z-index: 1  // LMS webtricks.  Sets posoiton of text elements to be above overlay. 
+        
+#main-heading-portfolio
+    position: relative
+    background-image: url(/resources/img/background_img_portfolio.png)  // LMS webtricks. 
+    background-size: cover  // LMS Webtricks
+    background-position: center  // LMS webtricks
+    min-height: 300px // adding min-height since it turns into small strip otherwise. 
+    &::before  // LMS webtricks - pseudo element, targets parent selector, in this case #intro-section. 
+        content: ""
+        position: absolute  //making sure the pseudo-element (or thin transparent sheet), does not leave the boundaries of the big box (intro-section). It moves relative to it.
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        background: rgba(255,255 ,255 ,0.65 ) 
+        z-index: 0  // sets overlay behind any content inside the section.
+    h1, p, a
+        position: relative
+        z-index: 1  // Sets posoiton of text elements to be above overlay. 
+        
+    
+  
 
 .placeholder-img
     width: 400px
@@ -42,3 +86,4 @@ footer
             margin: 0.8em  // adding space between lines
             i
                 margin-right: 0.6em // adding space between icons and the text.
+

@@ -1,6 +1,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 body {
+  display: grid;
+  grid-template-columns: 1fr;
   font-family: Roboto, sans-serif;
+}
+
+#intro-section {
+  position: relative;
+  background-image: url(/resources/img/background_img_index.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
+}
+#intro-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.65);
+  z-index: 0;
+}
+#intro-section h1, #intro-section p, #intro-section a {
+  position: relative;
+  z-index: 1;
+}
+
+#main-heading-portfolio {
+  position: relative;
+  background-image: url(/resources/img/background_img_portfolio.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
+}
+#main-heading-portfolio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.65);
+  z-index: 0;
+}
+#main-heading-portfolio h1, #main-heading-portfolio p, #main-heading-portfolio a {
+  position: relative;
+  z-index: 1;
 }
 
 .placeholder-img {
