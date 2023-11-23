@@ -47,9 +47,30 @@ body
         left: 0
         background: rgba(255,255 ,255 ,0.65 ) 
         z-index: 0  // sets overlay behind any content inside the section.
-    h1, p, a
+    h1
         position: relative  // relative position of text elemens makes sure that they follow the document flow // LMS webtricks / ChatGPT. 
         z-index: 1  // Sets posoiton of text elements to be above overlay. 
+
+#about-company
+    position: relative
+    background-image: url(/resources/img/background_img_index.png)  // LMS webtricks. 
+    background-size: cover  // LMS Webtricks
+    background-position: center  // LMS webtricks
+    min-height: 450px // TODO: Check the height of this, for styling correctly!
+    &::before  // LMS webtricks - Pseudo elelemtns - targets parent selector, in this case #intro-section. 
+        content: "" // ChatGPT - required for the pseudo-element to work. Often set to an empty string when pseudo-element is used for visual presentation - like an overlay in this case. 
+        position: absolute  // LMS webtricks /ChatGPT as mentioned above - this will position the overlay relative to intro-section
+        top: 1.25em
+        right: 1.25em
+        bottom: 1.25em
+        left: 1.25em
+        background: rgba(255,255 ,255 ,0.65 ) 
+        z-index: 0  // sets overlay behind any content inside the section.
+    #about-company-text-container //Wrapped text-elements in div tag to make sure I can keep the text from not "leaking" out of the overlay added. This way i can set a padding that matches the effect of the top/left/right/bottom values given for the pseudo-class in this case. 
+        padding: 1.25em
+        position: relative
+        z-index: 1  // LMS webtricks.  Sets posoiton of text elements to be above overlay. 
+
         
     
   
@@ -87,3 +108,5 @@ footer
             i
                 margin-right: 0.6em // adding space between icons and the text.
 
+
+@media screen and (min-width: 750px)
