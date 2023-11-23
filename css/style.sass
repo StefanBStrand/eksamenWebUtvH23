@@ -6,8 +6,6 @@ $greyblack: #252525
 $black: #000
 $white: #fff
 
-
-
 body
     display: grid
     grid-template-columns: 1fr
@@ -21,8 +19,7 @@ body
     main
         grid-area: main
     
-    
-
+// ****** index page styling *******
 
 #intro-section
     position: relative  // LMS webtricks /ChatGPT - any absolutely position child elements will be positioned relative to the intro-section
@@ -42,7 +39,9 @@ body
     h1, p, a
         position: relative
         z-index: 1  // LMS webtricks.  Sets posoiton of text elements to be above overlay. 
-        
+
+// ******* Product/portfolio page styling ********
+
 #main-heading-portfolio
     position: relative
     background-image: url(/resources/img/background_img_portfolio.png)  // LMS webtricks. 
@@ -61,6 +60,20 @@ body
     h1
         position: relative  // relative position of text elemens makes sure that they follow the document flow // LMS webtricks / ChatGPT. 
         z-index: 1  // Sets posoiton of text elements to be above overlay. 
+
+.placeholder-img
+    width: 400px
+    height: 400px
+    background-color: lightgrey
+
+.yellow-lines
+    display: block  // span is an inline element, need block to get get auto margin L/R to apply. 
+    height: 5px
+    background-color: $goldyellow
+    width: 50%
+    margin: 10px  //TODO: fix styling here later! 
+
+// ******* about page styling ********
 
 #about-company
     position: relative
@@ -82,22 +95,18 @@ body
         position: relative
         z-index: 1  // LMS webtricks.  Sets posoiton of text elements to be above overlay. 
 
-        
+#clients-display
+    background-color: $goldyellow
+
+#contact-information
+    ul
+        li
+            list-style: none  // Removing default bullet points for list.
+            margin: 0.8em  // adding space between lines
+            i
+                margin-right: 0.6em // adding space between icons and the text.        
     
   
-
-.placeholder-img
-    width: 400px
-    height: 400px
-    background-color: lightgrey
-
-.yellow-lines
-    display: block  // span is an inline element, need block to get get auto margin L/R to apply. 
-    height: 5px
-    background-color: $goldyellow
-    width: 50%
-    margin: 10px  //TODO: fix styling here later! 
-
 footer
     grid-area: footer
     background-color: $greyblack
@@ -108,17 +117,6 @@ footer
             margin: 10px
             i
                 color: white
-
-#clients-display
-    background-color: $goldyellow
-
-#contact-information
-    ul
-        li
-            list-style: none  // Removing default bullet points for list.
-            margin: 0.8em  // adding space between lines
-            i
-                margin-right: 0.6em // adding space between icons and the text.
 
 
 @media screen and (min-width: 700px)

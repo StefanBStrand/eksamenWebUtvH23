@@ -60,6 +60,20 @@ body main {
   z-index: 1;
 }
 
+.placeholder-img {
+  width: 400px;
+  height: 400px;
+  background-color: lightgrey;
+}
+
+.yellow-lines {
+  display: block;
+  height: 5px;
+  background-color: #e6bd43;
+  width: 50%;
+  margin: 10px;
+}
+
 #about-company {
   position: relative;
   background-image: url(/resources/img/background_img_index.png);
@@ -83,18 +97,16 @@ body main {
   z-index: 1;
 }
 
-.placeholder-img {
-  width: 400px;
-  height: 400px;
-  background-color: lightgrey;
+#clients-display {
+  background-color: #e6bd43;
 }
 
-.yellow-lines {
-  display: block;
-  height: 5px;
-  background-color: #e6bd43;
-  width: 50%;
-  margin: 10px;
+#contact-information ul li {
+  list-style: none;
+  margin: 0.8em;
+}
+#contact-information ul li i {
+  margin-right: 0.6em;
 }
 
 footer {
@@ -108,18 +120,6 @@ footer ul li {
 }
 footer ul li i {
   color: white;
-}
-
-#clients-display {
-  background-color: #e6bd43;
-}
-
-#contact-information ul li {
-  list-style: none;
-  margin: 0.8em;
-}
-#contact-information ul li i {
-  margin-right: 0.6em;
 }
 
 @media screen and (min-width: 700px) {
