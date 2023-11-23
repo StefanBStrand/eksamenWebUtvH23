@@ -61,6 +61,11 @@ body
         position: relative  // relative position of text elemens makes sure that they follow the document flow // LMS webtricks / ChatGPT. 
         z-index: 1  // Sets posoiton of text elements to be above overlay. 
 
+.portfolio
+    transition: transform 0.5s ease  // learned this while working with oblig 3/4. 
+    &:hover
+        transform: scale(1.08)
+
 .placeholder-img
     width: 400px
     height: 400px

@@ -60,6 +60,13 @@ body main {
   z-index: 1;
 }
 
+.portfolio {
+  transition: transform 0.5s ease;
+}
+.portfolio:hover {
+  transform: scale(1.08);
+}
+
 .placeholder-img {
   width: 400px;
   height: 400px;
