@@ -60,16 +60,9 @@ body main {
   z-index: 1;
 }
 
-.portfolio {
-  transition: transform 0.5s ease;
-}
-.portfolio:hover {
-  transform: scale(1.08);
-}
-
 .placeholder-img {
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  margin: 0;
   background-color: lightgrey;
 }
 
@@ -77,8 +70,12 @@ body main {
   display: block;
   height: 5px;
   background-color: #e6bd43;
-  width: 50%;
-  margin: 10px;
+  border-style: none;
+  width: 100%;
+}
+
+.portfolio-section {
+  padding: 1em 2.8em;
 }
 
 #about-company {
@@ -135,5 +132,18 @@ footer ul li i {
     grid-template-rows: auto auto auto;
     grid-template-areas: "header header nav" "main main main" "footer footer footer";
     max-width: 1600px;
+  }
+  .portfolio {
+    transition: transform 0.5s ease;
+    flex-grow: 1;
+    max-width: 692px;
+    margin: 1.2em;
+  }
+  .portfolio:hover {
+    transform: scale(1.08);
+  }
+  .article-wrapper {
+    display: flex;
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=style.css.map */

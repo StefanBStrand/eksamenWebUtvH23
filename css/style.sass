@@ -61,22 +61,25 @@ body
         position: relative  // relative position of text elemens makes sure that they follow the document flow // LMS webtricks / ChatGPT. 
         z-index: 1  // Sets posoiton of text elements to be above overlay. 
 
-.portfolio
-    transition: transform 0.5s ease  // learned this while working with oblig 3/4. 
-    &:hover
-        transform: scale(1.08)
-
 .placeholder-img
-    width: 400px
-    height: 400px
+    width: 100%
+    margin: 0
     background-color: lightgrey
 
 .yellow-lines
     display: block  // span is an inline element, need block to get get auto margin L/R to apply. 
     height: 5px
     background-color: $goldyellow
-    width: 50%
-    margin: 10px  //TODO: fix styling here later! 
+    border-style: none
+    
+    width: 100%
+    //TODO: fix styling here later! 
+
+
+.portfolio-section
+    padding: 1em 2.8em
+
+
 
 // ******* about page styling ********
 
@@ -130,4 +133,18 @@ footer
         grid-template-rows: auto auto auto
         grid-template-areas: "header header nav" "main main main" "footer footer footer"
         max-width: 1600px
-      
+
+    .portfolio
+        transition: transform 0.5s ease  // learned this while working with oblig 3/4. 
+        &:hover
+            transform: scale(1.08)
+
+        flex-grow: 1
+        max-width: 692px
+        margin: 1.2em
+    
+    .article-wrapper 
+        display: flex
+        flex-wrap: wrap
+    
+        
