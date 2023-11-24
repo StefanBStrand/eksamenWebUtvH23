@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
 header {
   display: flex;
   justify-content: center;
@@ -26,7 +26,17 @@ header img {
   color: #000;
 }
 
+#contact-button {
+  background-color: #e6bd43;
+  display: inline-block;
+  height: 1.8em;
+  width: 5em;
+  padding-top: 12px;
+  font-weight: 500;
+}
+
 body {
+  font-weight: 300;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto 1fr auto;

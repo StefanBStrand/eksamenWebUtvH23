@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap')
+
+
 // Importing font Roboto from google fonts here.
 
 $goldyellow: #e6bd43 
@@ -30,9 +32,19 @@ header
             a
                 text-decoration: none
                 color: $black
+
+#contact-button
+    background-color: $goldyellow
+    display: inline-block  // inline-block here to get height/width to apply to element since a tag is default inline and does not respect height/width set. 
+    height: 1.8em
+    width: 5em
+    padding-top: 12px
+    font-weight: 500
+      
                 
 
 body
+    font-weight: 300 // setting the default font weight to 300 since imported multiple weights
     display: grid
     grid-template-columns: 1fr
     grid-template-rows: auto auto 1fr auto
