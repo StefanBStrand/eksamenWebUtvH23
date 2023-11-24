@@ -78,6 +78,10 @@ body main {
   padding: 1em 2.8em;
 }
 
+#previous-jobs {
+  padding: 1em 2.8em;
+}
+
 #about-company {
   position: relative;
   background-image: url(/resources/img/background_img_index.png);
@@ -126,7 +130,7 @@ footer ul li i {
   color: white;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 650px) {
   body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
