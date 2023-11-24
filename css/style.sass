@@ -10,38 +10,9 @@ $white: #fff
 
 header
     display: flex
-    justify-content: center  //centers logo
+    justify-content: center  //display flex and justify content center, centers logo.
     img
-        margin-top: 0.8em
-
-
-// ********** MENU STYLING HERE *********
-
-.menu-items
-    display: flex
-    justify-content: center
-    font-size: 1.2em
-   
-    ul
-        margin: 0 // TODO: Check if this is correct way to style.. 
-        padding: 0 // TODO: check if correct way to style.. (Helps center menu right under logo)
-        li
-            list-style-type: none  //removing bullet points from list style.
-            margin: 0.4em
-            text-align: center // centering text on menu items
-            a
-                text-decoration: none
-                color: $black
-
-#contact-button
-    background-color: $goldyellow
-    display: inline-block  // inline-block here to get height/width to apply to element since a tag is default inline and does not respect height/width set. 
-    height: 1.8em
-    width: 5em
-    padding-top: 12px
-    font-weight: 500
-      
-                
+        margin-top: 0.8em  // get logo down from beick stuck to the edge of the container
 
 body
     font-weight: 300 // setting the default font weight to 300 since imported multiple weights
@@ -56,6 +27,50 @@ body
         grid-area: nav
     main
         grid-area: main
+
+
+// ********** MENU STYLING HERE *********
+
+.menu-items
+    text-align: center // centers menu items
+    font-size: 1.2em
+   
+    ul
+        margin: 0 // removing default ul margin and padding to not offset position set by display flex on class
+        //menu itmes. 
+        padding: 0 
+        li
+            list-style-type: none  //removing bullet points from list style.
+            padding: 0.3em  // letting list items breathe
+            
+             
+            a
+                text-decoration: none
+                color: $black
+                position: relative // for the yellow pseudo line element to be placed correctly
+
+                &.active-class
+                    font-weight: 500
+                    &::after
+                        content: ""
+                        display: block
+                        margin-top: 0
+                        height: 0.15em
+                        background-color: $goldyellow
+                        width: 100%
+                        position: absolute
+                        left: 0
+                        // TODO: REVIEW THIS CODE -- START HERE! 
+        
+    
+.yellow-button
+    background-color: $goldyellow
+    display: inline-block  // inline-block here to get height/width to apply to element since <a> tag is default an inline element and does not respect height/width set. 
+    height: 1.8em
+    width: 5em
+    padding-top: 12px
+    font-weight: 500
+
     
 // ****** index page styling *******
 
@@ -86,6 +101,9 @@ body
     background-size: cover  // LMS Webtricks
     background-position: center  // LMS webtricks
     min-height: 300px // adding min-height to entire section, since it turns into small strip otherwise when ontly containing an h1 tag. 
+    display: flex
+    justify-content: center  
+    align-items: center
     &::before  // LMS webtricks - pseudo element, targets parent selector, in this case #intro-section. 
         content: ""
         position: absolute  //making sure the pseudo-element (or thin transparent sheet), does not leave the boundaries of the big box (intro-section). It moves relative to it.
@@ -98,9 +116,8 @@ body
     h1
         position: relative  // relative position of text elemens makes sure that they follow the document flow // LMS webtricks / ChatGPT. 
         z-index: 1  // Sets posoiton of text elements to be above overlay. 
+       
         
-        
-
 
 .placeholder-img
     width: 100%
@@ -110,6 +127,7 @@ body
 .yellow-lines
     display: block  // span is an inline element, need block to get get auto margin L/R to apply. 
     height: 5px
+    margin-bottom: 2em
     background-color: $goldyellow
     border-style: none
     
@@ -119,6 +137,9 @@ body
 
 .portfolio-section
     padding: 1em 2.8em
+
+figure
+    margin: 0
 
 #previous-jobs
     padding: 1em 2.8em
@@ -170,7 +191,7 @@ footer
                 color: white
 
 
-@media screen and (min-width: 650px)
+@media screen and (min-width: 900px)
     header
         justify-content: flex-start  // pushing logo to the left on desktop display. 
         img
@@ -180,11 +201,13 @@ footer
     body
         grid-template-columns: 1fr 1fr 1fr
         grid-template-rows: auto auto auto
-        grid-template-areas: "header header nav" "main main main" "footer footer footer"
+        grid-template-areas: "header nav nav" "main main main" "footer footer footer"
         max-width: 1600px
 
     .menu-items
+        display: flex
         align-items: center  // this to vertically center the menu items on desktop display. 
+        justify-content: right
         
         ul
             li
@@ -197,9 +220,10 @@ footer
         &:hover
             transform: scale(1.08)
 
-        flex-grow: 1
         max-width: 692px
+        flex-grow: 1
         margin: 1.2em
+        width: 30%
        
     
     .article-wrapper 

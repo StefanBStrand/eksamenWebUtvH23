@@ -7,34 +7,6 @@ header img {
   margin-top: 0.8em;
 }
 
-.menu-items {
-  display: flex;
-  justify-content: center;
-  font-size: 1.2em;
-}
-.menu-items ul {
-  margin: 0;
-  padding: 0;
-}
-.menu-items ul li {
-  list-style-type: none;
-  margin: 0.4em;
-  text-align: center;
-}
-.menu-items ul li a {
-  text-decoration: none;
-  color: #000;
-}
-
-#contact-button {
-  background-color: #e6bd43;
-  display: inline-block;
-  height: 1.8em;
-  width: 5em;
-  padding-top: 12px;
-  font-weight: 500;
-}
-
 body {
   font-weight: 300;
   display: grid;
@@ -51,6 +23,46 @@ body nav {
 }
 body main {
   grid-area: main;
+}
+
+.menu-items {
+  text-align: center;
+  font-size: 1.2em;
+}
+.menu-items ul {
+  margin: 0;
+  padding: 0;
+}
+.menu-items ul li {
+  list-style-type: none;
+  padding: 0.3em;
+}
+.menu-items ul li a {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+.menu-items ul li a.active-class {
+  font-weight: 500;
+}
+.menu-items ul li a.active-class::after {
+  content: "";
+  display: block;
+  margin-top: 0;
+  height: 0.15em;
+  background-color: #e6bd43;
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.yellow-button {
+  background-color: #e6bd43;
+  display: inline-block;
+  height: 1.8em;
+  width: 5em;
+  padding-top: 12px;
+  font-weight: 500;
 }
 
 #intro-section {
@@ -81,6 +93,9 @@ body main {
   background-size: cover;
   background-position: center;
   min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #main-heading-portfolio::before {
   content: "";
@@ -106,6 +121,7 @@ body main {
 .yellow-lines {
   display: block;
   height: 5px;
+  margin-bottom: 2em;
   background-color: #e6bd43;
   border-style: none;
   width: 100%;
@@ -113,6 +129,10 @@ body main {
 
 .portfolio-section {
   padding: 1em 2.8em;
+}
+
+figure {
+  margin: 0;
 }
 
 #previous-jobs {
@@ -167,7 +187,7 @@ footer ul li i {
   color: white;
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 900px) {
   header {
     justify-content: flex-start;
   }
@@ -177,20 +197,23 @@ footer ul li i {
   body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
-    grid-template-areas: "header header nav" "main main main" "footer footer footer";
+    grid-template-areas: "header nav nav" "main main main" "footer footer footer";
     max-width: 1600px;
   }
   .menu-items {
+    display: flex;
     align-items: center;
+    justify-content: right;
   }
   .menu-items ul li {
     display: inline-block;
   }
   .portfolio {
     transition: transform 0.5s ease;
-    flex-grow: 1;
     max-width: 692px;
+    flex-grow: 1;
     margin: 1.2em;
+    width: 30%;
   }
   .portfolio:hover {
     transform: scale(1.08);
