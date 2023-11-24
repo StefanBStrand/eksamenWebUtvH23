@@ -6,6 +6,32 @@ $greyblack: #252525
 $black: #000
 $white: #fff
 
+header
+    display: flex
+    justify-content: center  //centers logo
+    img
+        margin-top: 0.8em
+
+
+// ********** MENU STYLING HERE *********
+
+.menu-items
+    display: flex
+    justify-content: center
+    font-size: 1.2em
+   
+    ul
+        margin: 0 // TODO: Check if this is correct way to style.. 
+        padding: 0 // TODO: check if correct way to style.. (Helps center menu right under logo)
+        li
+            list-style-type: none  //removing bullet points from list style.
+            margin: 0.4em
+            text-align: center // centering text on menu items
+            a
+                text-decoration: none
+                color: $black
+                
+
 body
     display: grid
     grid-template-columns: 1fr
@@ -60,6 +86,9 @@ body
     h1
         position: relative  // relative position of text elemens makes sure that they follow the document flow // LMS webtricks / ChatGPT. 
         z-index: 1  // Sets posoiton of text elements to be above overlay. 
+        
+        
+
 
 .placeholder-img
     width: 100%
@@ -130,11 +159,26 @@ footer
 
 
 @media screen and (min-width: 650px)
+    header
+        justify-content: flex-start  // pushing logo to the left on desktop display. 
+        img
+            margin-left: 0.8em
+
+
     body
         grid-template-columns: 1fr 1fr 1fr
         grid-template-rows: auto auto auto
         grid-template-areas: "header header nav" "main main main" "footer footer footer"
         max-width: 1600px
+
+    .menu-items
+        align-items: center  // this to vertically center the menu items on desktop display. 
+        
+        ul
+            li
+                display: inline-block  // displaying menu items horisontally on breakpoint. 
+
+        
 
     .portfolio
         transition: transform 0.5s ease  // learned this while working with oblig 3/4. 
