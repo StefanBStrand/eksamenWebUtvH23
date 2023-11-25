@@ -85,6 +85,8 @@ body main {
 #intro-section h1, #intro-section p, #intro-section a {
   position: relative;
   z-index: 1;
+  text-decoration: none;
+  text-align: center;
 }
 
 #main-heading-portfolio {
