@@ -48,6 +48,7 @@ body
 .menu-items
     text-align: center // centers menu items
     font-size: 1.2em
+
    
     ul
         margin: 0 // removing default ul margin and padding to not offset position set by display flex on class
@@ -78,12 +79,6 @@ body
         
     
 
-
-    
-
-    
-
-    
 // ****** index page styling *******
 
 #intro-section
@@ -92,6 +87,9 @@ body
     background-size: cover  // LMS Webtricks
     background-position: center  // LMS webtricks
     min-height: 300px
+    padding: 3em  // to get desired visual effects as to mimic requirements on video presentation.
+    margin-top: 0.8em  // giving space between menu items and headline section. 
+
     &::before  // LMS webtricks - Pseudo elelemtns - targets parent selector, in this case #intro-section. 
         content: "" // ChatGPT - required for the pseudo-element to work. Often set to an empty string when pseudo-element is used for visual presentation - like an overlay in this case. 
         position: absolute  // LMS webtricks /ChatGPT as mentioned above - this will position the overlay relative to intro-section
@@ -111,6 +109,9 @@ body
     display: flex
     align-items: center
     justify-content: center
+
+#subheading-text
+    padding: 3em
   
 
 

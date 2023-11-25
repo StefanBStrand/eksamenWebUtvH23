@@ -72,6 +72,8 @@ body main {
   background-size: cover;
   background-position: center;
   min-height: 300px;
+  padding: 3em;
+  margin-top: 0.8em;
 }
 #intro-section::before {
   content: "";
@@ -94,6 +96,10 @@ body main {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#subheading-text {
+  padding: 3em;
 }
 
 #main-heading-portfolio {
