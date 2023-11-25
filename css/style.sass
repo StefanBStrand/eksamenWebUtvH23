@@ -7,6 +7,7 @@ $goldyellow: #e6bd43
 $greyblack: #252525
 $black: #000
 $white: #fff
+$lightgrey: #CCCCCC
 
 
 // ******** YELLOW BUTTON STYLING HERE *******
@@ -120,6 +121,32 @@ body
 #read-more-about-us-button
     border: 2.5px solid $black
     cursor: pointer
+
+#our-services
+    padding: 3em
+    text-align: center  // centering text to get desired effect. 
+
+#sign-up-newsletter
+    padding: 2em
+    text-align: center
+    background-color: $lightgrey
+
+.not-visible-label
+    display: none
+
+#news-letter-sign-up-form
+    display: flex  // display flex (which has stretch as default) to get input area and button to equal height
+    // TODO: ADD this source to document: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+    justify-content: center
+    input
+        border: none
+        padding-left: 1em
+    button
+        margin-left: 0.3em
+        border: none
+    
+    
+    
 
 
   
