@@ -8,6 +8,20 @@ $greyblack: #252525
 $black: #000
 $white: #fff
 
+
+// ******** YELLOW BUTTON STYLING HERE *******
+
+.yellow-button
+    background-color: $goldyellow
+    color: black
+    padding: 1em 1.5em
+    text-decoration: none
+    display: inline-block  // inline-block here to get height/width to apply to element since <a> tag is default an inline element and does not respect height/width set. 
+    font-weight: 500
+    cursor: pointer //change appearance of mouse cursor to indicate clickable link. 
+
+// ****** END OF BUTTON STYLING ***********
+
 header
     display: flex
     justify-content: center  //display flex and justify content center, centers logo.
@@ -63,13 +77,11 @@ body
                         // TODO: REVIEW THIS CODE -- START HERE! 
         
     
-.yellow-button
-    background-color: $goldyellow
-    display: inline-block  // inline-block here to get height/width to apply to element since <a> tag is default an inline element and does not respect height/width set. 
-    height: 1.8em
-    width: 5em
-    padding-top: 12px
-    font-weight: 500
+
+
+    
+
+    
 
     
 // ****** index page styling *******
@@ -94,6 +106,16 @@ body
         z-index: 1  // LMS webtricks.  Sets posoiton of text elements to be above overlay. 
         text-decoration: none
         text-align: center
+
+#about-our-services-button
+    display: flex
+    align-items: center
+    justify-content: center
+  
+
+
+   
+       
         
 
 
