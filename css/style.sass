@@ -248,7 +248,23 @@ footer
     grid-area: footer
     background-color: $greyblack
     color: white
-    ul
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 30px 20px 20px 20px
+    a
+        width: 100%  // setting a-tag to 100% so that img can scale relatively within. 
+        text-align: center
+        img
+            width: 20%  //setting desired size for logo. 
+            max-width: 170px // setting max width for logo for wide screens. 
+            
+    h5
+        margin: 10px
+    ul 
+        padding: 0  // otherwise offsets center position of flex properties. 
+        margin: 0
         li
             display: inline-block
             margin: 10px
@@ -257,6 +273,10 @@ footer
 
 
 @media screen and (min-width: 900px)
+    .yellow-button
+        &:hover
+            background-color: $black
+            color: $goldyellow
     header
         justify-content: flex-start  // pushing logo to the left on desktop display. 
         img

@@ -230,6 +230,26 @@ footer {
   grid-area: footer;
   background-color: #252525;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px 20px 20px;
+}
+footer a {
+  width: 100%;
+  text-align: center;
+}
+footer a img {
+  width: 20%;
+  max-width: 170px;
+}
+footer h5 {
+  margin: 10px;
+}
+footer ul {
+  padding: 0;
+  margin: 0;
 }
 footer ul li {
   display: inline-block;
@@ -240,6 +260,10 @@ footer ul li i {
 }
 
 @media screen and (min-width: 900px) {
+  .yellow-button:hover {
+    background-color: #000;
+    color: #e6bd43;
+  }
   header {
     justify-content: flex-start;
   }
