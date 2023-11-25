@@ -102,6 +102,16 @@ body main {
   padding: 3em;
 }
 
+#about-our-company {
+  padding: 3em;
+  background-color: #e6bd43;
+}
+
+#read-more-about-us-button {
+  border: 2.5px solid #000;
+  cursor: pointer;
+}
+
 #main-heading-portfolio {
   position: relative;
   background-image: url(/resources/img/background_img_portfolio.png);
@@ -130,7 +140,6 @@ body main {
 .placeholder-img {
   width: 100%;
   margin: 0;
-  background-color: lightgrey;
 }
 
 .yellow-lines {
