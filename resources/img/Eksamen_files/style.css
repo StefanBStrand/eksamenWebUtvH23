@@ -217,17 +217,16 @@ figure {
 
 #clients-display {
   background-color: #e6bd43;
-  padding: 1em;
-  text-align: center;
-}
-#clients-display #client-figure-wrapper {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-content: center;
+  align-items: center;
+  flex-wrap: flex;
+  padding: 3em;
 }
-#clients-display #client-figure-wrapper figure {
-  margin: 0.6em;
+#clients-display img {
+  margin: 10px;
 }
 
 #contact-information ul li {
