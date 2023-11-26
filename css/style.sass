@@ -48,6 +48,7 @@ body
         grid-area: nav
     main
         grid-area: main
+        margin-top: 0.8em
 
 
 // ********** MENU STYLING HERE *********
@@ -95,7 +96,6 @@ body
     background-position: center  // LMS webtricks
     min-height: 300px
     padding: 3em  // to get desired visual effects as to mimic requirements on video presentation.
-    margin-top: 0.8em  // giving space between menu items and headline section. 
     text-align: center
 
     &::before  // LMS webtricks - Pseudo elelemtns - targets parent selector, in this case #intro-section. 
@@ -252,7 +252,7 @@ figure
         right: 1.25em
         bottom: 1.25em
         left: 1.25em
-        background: rgba(255,255 ,255 ,0.65 ) 
+        background: rgba(255,255 ,255 ,0.85 ) 
         z-index: 0  // sets overlay behind any content inside the section.
     #about-company-text-container //Wrapped text-elements in div tag to make sure I can keep the text from not "leaking" out of the overlay added. This way i can set a padding that matches the effect of the top/left/right/bottom values given for the pseudo-class in this case. 
         padding: 1.25em
@@ -279,6 +279,7 @@ figure
     background-color: $lightgrey
     h3
         text-align: center
+        margin-bottom: 3rem
     form  
         display: flex  // getting the input fields placed vertically with flex and colum direction. 
         flex-direction: column

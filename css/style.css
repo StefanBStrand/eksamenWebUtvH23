@@ -38,6 +38,7 @@ body nav {
 }
 body main {
   grid-area: main;
+  margin-top: 0.8em;
 }
 
 .menu-items {
@@ -78,7 +79,6 @@ body main {
   background-position: center;
   min-height: 300px;
   padding: 3em;
-  margin-top: 0.8em;
   text-align: center;
 }
 #intro-section::before {
@@ -232,7 +232,7 @@ figure {
   right: 1.25em;
   bottom: 1.25em;
   left: 1.25em;
-  background: rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.85);
   z-index: 0;
 }
 #about-company #about-company-text-container {
@@ -262,6 +262,7 @@ figure {
 }
 #contact-form h3 {
   text-align: center;
+  margin-bottom: 3rem;
 }
 #contact-form form {
   display: flex;
