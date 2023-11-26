@@ -78,8 +78,11 @@ body main {
   background-size: cover;
   background-position: center;
   min-height: 300px;
-  padding: 3em;
-  text-align: center;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 #intro-section::before {
   content: "";
@@ -95,6 +98,7 @@ body main {
   position: relative;
   z-index: 1;
   text-decoration: none;
+  text-align: center;
 }
 #intro-section #about-our-services-button {
   text-align: left;
@@ -119,14 +123,14 @@ body main {
   cursor: pointer;
 }
 
-#our-services {
+.our-services {
   padding: 3em;
   text-align: center;
 }
-#our-services h3 {
+.our-services h3 {
   margin-bottom: 3rem;
 }
-#our-services p {
+.our-services p {
   margin-bottom: 3rem;
 }
 
@@ -310,7 +314,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px 20px 20px 20px;
+  padding: 2rem;
 }
 footer a {
   width: 100%;
@@ -336,12 +340,15 @@ footer ul li i {
 }
 
 @media screen and (min-width: 900px) {
+  h3 {
+    font-size: 1.5rem;
+  }
   .yellow-button:hover {
     background-color: #000;
     color: #e6bd43;
   }
   header {
-    justify-content: flex-start;
+    text-align: left;
   }
   header img {
     margin-left: 0.8em;
@@ -360,6 +367,28 @@ footer ul li i {
   .menu-items ul li {
     display: inline-block;
   }
+  #intro-section {
+    padding: 2rem 10rem;
+  }
+  #subheading-text {
+    padding: 2rem 10rem;
+  }
+  #about-our-company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #about-our-company img {
+    width: unset;
+  }
+  #about-our-company div {
+    margin-top: 0;
+  }
+  .our-services section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .portfolio {
     transition: transform 0.5s ease;
     max-width: 692px;
@@ -373,5 +402,20 @@ footer ul li i {
   .article-wrapper {
     display: flex;
     flex-wrap: wrap;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem 1rem;
+  }
+  footer a {
+    width: unset;
+    text-align: left;
+  }
+  footer a img {
+    width: 55%;
+  }
+  footer i {
+    font-size: 1.5rem;
   }
 }/*# sourceMappingURL=style.css.map */

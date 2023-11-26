@@ -95,8 +95,13 @@ body
     background-size: cover  // LMS Webtricks
     background-position: center  // LMS webtricks
     min-height: 300px
-    padding: 3em  // to get desired visual effects as to mimic requirements on video presentation.
-    text-align: center
+    padding: 3rem  // to get desired visual effects as to mimic requirements on video presentation.
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    
+    
 
     &::before  // LMS webtricks - Pseudo elelemtns - targets parent selector, in this case #intro-section. 
         content: "" // ChatGPT - required for the pseudo-element to work. Often set to an empty string when pseudo-element is used for visual presentation - like an overlay in this case. 
@@ -111,6 +116,7 @@ body
         position: relative
         z-index: 1  // LMS webtricks.  Sets posoiton of text elements to be above overlay. 
         text-decoration: none
+        text-align: center
     #about-our-services-button  // centering this button for desired visual look. 
         text-align: left
 
@@ -132,7 +138,7 @@ body
     cursor: pointer
 
 
-#our-services
+.our-services
     padding: 3em
     text-align: center  // centering text to get desired effect. 
     h3
@@ -325,7 +331,7 @@ footer
     flex-direction: column
     justify-content: center
     align-items: center
-    padding: 30px 20px 20px 20px
+    padding: 2rem
     a
         width: 100%  // setting a-tag to 100% so that img can scale relatively within. 
         text-align: center
@@ -345,13 +351,19 @@ footer
                 color: white
 
 
+// ********* MEDIA QUERY HERE ************
+
+
 @media screen and (min-width: 900px)
+    h3
+        font-size: 1.5rem
+
     .yellow-button
         &:hover
             background-color: $black
             color: $goldyellow
     header
-        justify-content: flex-start  // pushing logo to the left on desktop display. 
+        text-align: left
         img
             margin-left: 0.8em
 
@@ -371,7 +383,32 @@ footer
             li
                 display: inline-block  // displaying menu items horisontally on breakpoint. 
 
+    // ******** INDEX PAGE STYLING *******
         
+    #intro-section
+        padding: 2rem 10rem  // to get desired visual effects as to mimic requirements on video presentation.
+
+    #subheading-text
+        padding: 2rem 10rem  // to get desired visual effects as to mimic requirements on video presentation.
+
+    #about-our-company
+        display: flex
+        justify-content: center
+        align-items: center
+        img
+            width: unset
+        div
+            margin-top: 0
+    
+    .our-services
+        
+        section
+            display: flex
+            justify-content: center
+            align-items: center
+        
+            
+    // ******* PRODUCT PAGE STYLING *****
 
     .portfolio
         transition: transform 0.5s ease  // learned this while working with oblig 3/4. 
@@ -387,5 +424,19 @@ footer
     .article-wrapper 
         display: flex
         flex-wrap: wrap
+
+
+    footer
+        flex-direction: row
+        justify-content: space-between
+        padding: 3rem 1rem
+        a
+            width: unset
+            text-align: left
+            img
+                width: 55%
+          
+        i
+            font-size: 1.5rem
     
         
