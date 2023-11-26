@@ -218,6 +218,8 @@ figure
     background-size: cover  // LMS Webtricks
     background-position: center  // LMS webtricks
     min-height: 450px // TODO: Check the height of this, for styling correctly!
+    padding: 3em // Padding section for desired look. 
+
     &::before  // LMS webtricks - Pseudo elelemtns - targets parent selector, in this case #intro-section. 
         content: "" // ChatGPT - required for the pseudo-element to work. Often set to an empty string when pseudo-element is used for visual presentation - like an overlay in this case. 
         position: absolute  // LMS webtricks /ChatGPT as mentioned above - this will position the overlay relative to intro-section
@@ -234,6 +236,15 @@ figure
 
 #clients-display
     background-color: $goldyellow
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+    align-items: center
+    flex-wrap: flex
+    padding: 3em
+    img
+        margin: 10px
+        
 
 #contact-information
     ul
@@ -248,7 +259,7 @@ footer
     grid-area: footer
     background-color: $greyblack
     color: white
-    display: flex
+    display: flex  // display flex and direction column to stack items vertically, default is row. 
     flex-direction: column
     justify-content: center
     align-items: center
