@@ -102,11 +102,16 @@ body main {
 
 #subheading-text {
   padding: 3em;
+  text-align: center;
 }
 
 #about-our-company {
   padding: 3em;
   background-color: #e6bd43;
+}
+#about-our-company div {
+  padding: 0 2rem;
+  margin-top: 3rem;
 }
 
 #read-more-about-us-button {
@@ -117,6 +122,12 @@ body main {
 #our-services {
   padding: 3em;
   text-align: center;
+}
+#our-services h3 {
+  margin-bottom: 3rem;
+}
+#our-services p {
+  margin-bottom: 3rem;
 }
 
 #sign-up-newsletter {
