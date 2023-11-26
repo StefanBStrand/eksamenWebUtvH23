@@ -79,6 +79,7 @@ body main {
   min-height: 300px;
   padding: 3em;
   margin-top: 0.8em;
+  text-align: center;
 }
 #intro-section::before {
   content: "";
@@ -94,13 +95,9 @@ body main {
   position: relative;
   z-index: 1;
   text-decoration: none;
-  text-align: center;
 }
-
-#about-our-services-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#intro-section #about-our-services-button {
+  text-align: left;
 }
 
 #subheading-text {

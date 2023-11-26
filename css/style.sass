@@ -96,6 +96,7 @@ body
     min-height: 300px
     padding: 3em  // to get desired visual effects as to mimic requirements on video presentation.
     margin-top: 0.8em  // giving space between menu items and headline section. 
+    text-align: center
 
     &::before  // LMS webtricks - Pseudo elelemtns - targets parent selector, in this case #intro-section. 
         content: "" // ChatGPT - required for the pseudo-element to work. Often set to an empty string when pseudo-element is used for visual presentation - like an overlay in this case. 
@@ -110,12 +111,9 @@ body
         position: relative
         z-index: 1  // LMS webtricks.  Sets posoiton of text elements to be above overlay. 
         text-decoration: none
-        text-align: center
+    #about-our-services-button  // centering this button for desired visual look. 
+        text-align: left
 
-#about-our-services-button  // centering this button for desired visual look. 
-    display: flex
-    align-items: center
-    justify-content: center
 
 #subheading-text  // adding padding to section subheadning for visual effects.
     padding: 3em
