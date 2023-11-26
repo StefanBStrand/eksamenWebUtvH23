@@ -10,11 +10,16 @@
 }
 
 header {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  margin-top: 1rem;
+}
+header a {
+  width: 100%;
 }
 header img {
   margin-top: 0.8em;
+  width: 25%;
+  max-width: 170px;
 }
 
 body {
@@ -163,6 +168,18 @@ body main {
 #main-heading-portfolio h1 {
   position: relative;
   z-index: 1;
+}
+
+#product-category-button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+#product-category-button-wrapper a {
+  text-decoration: none;
+  color: #000;
+  border: 2px solid #000;
+  padding: 0.6rem;
+  margin: 0 0.7rem 0.7rem 0;
 }
 
 .placeholder-img {

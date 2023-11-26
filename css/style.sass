@@ -24,10 +24,16 @@ $lightgrey: #f5f5f5
 // ****** END OF BUTTON STYLING ***********
 
 header
-    display: flex
-    justify-content: center  //display flex and justify content center, centers logo.
+    text-align: center
+    margin-top: 1rem
+    a
+        width: 100%
+       
     img
         margin-top: 0.8em  // get logo down from beick stuck to the edge of the container
+        width: 25%
+        max-width: 170px
+
 
 body
     font-weight: 300 // setting the default font weight to 300 since imported multiple weights
@@ -181,6 +187,16 @@ body
     h1
         position: relative  // relative position of text elemens makes sure that they follow the document flow // LMS webtricks / ChatGPT. 
         z-index: 1  // Sets posoiton of text elements to be above overlay. 
+
+#product-category-button-wrapper
+    display: flex
+    flex-wrap: wrap
+    a
+        text-decoration: none
+        color: $black
+        border: 2px solid $black
+        padding: 0.6rem
+        margin: 0 0.7rem 0.7rem 0
        
         
 
