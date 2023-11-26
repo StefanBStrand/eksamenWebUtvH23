@@ -219,6 +219,7 @@ figure
     background-position: center  // LMS webtricks
     min-height: 450px // TODO: Check the height of this, for styling correctly!
     padding: 3em // Padding section for desired look. 
+    margin-top: 0.5rem
 
     &::before  // LMS webtricks - Pseudo elelemtns - targets parent selector, in this case #intro-section. 
         content: "" // ChatGPT - required for the pseudo-element to work. Often set to an empty string when pseudo-element is used for visual presentation - like an overlay in this case. 
@@ -241,19 +242,48 @@ figure
     
     #client-figure-wrapper
         display: flex
-        flex-wrap: wrap
-        justify-content: space-evenly
+        flex-wrap: wrap  // items wrap onto multiple lines, from top to bottom. 
+        justify-content: space-evenly // spaces content evenly and centers items.
         align-content: center
         figure
             margin: 0.6em
-        // CHECK THIS LATER -- CONTINUE HERE *******
+
+
+
+#contact-form
+    padding: 1rem
+    background-color: #EEEEEE
+    h3
+        text-align: center
+    form  
+        display: flex  // getting the input fields placed vertically with flex and colum direction. 
+        flex-direction: column
+    label
+        margin-bottom: 0.8rem
+    input
+        height: 3rem
+        padding-left: 0.6rem
+        margin-bottom: 0.8rem
+        border: none
+    button
+        border: none
+        width: 40%
+        margin-top: 1rem
+    textarea
+        border: none
+        height: 10rem
         
+  
+            
 
 #contact-information
+    padding: 2rem
+
     ul
         li
             list-style: none  // Removing default bullet points for list.
             margin: 0.8em  // adding space between lines
+            
             i
                 margin-right: 0.6em // adding space between icons and the text.        
     
