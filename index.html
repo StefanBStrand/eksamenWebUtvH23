@@ -124,10 +124,13 @@
       <section id="sign-up-newsletter">
         <h3>Sign up for our newsletter</h3>
         <form id="news-letter-sign-up-form">
-          <label for="email" class="not-visible-label">Email</label>
-          <!--TODO: Fix SASS so the Email text is not visible - it is just for
-          accessibility(Screen readers) Or, can the tag just be empty?.-->
-          <input type="email" name="email" placeholder="nora@epost.no" />
+          <label for="email" id="hidden-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="nora@epost.no"
+          />
           <button type="button" class="yellow-button">Sign me up!</button>
           <!--TODO: review HTML on all buttons/links - needs to be coherent-->
         </form>
@@ -153,16 +156,11 @@
             <a href="https://www.linkedin.com/" aria-label="linkedin"></a
             ><i class="fa-brands fa-linkedin"></i>
           </li>
-          <li>
-            <a href="#header" aria-label="jump to top of page">
-              <i class="fa-solid fa-arrow-up"></i>
-            </a>
-            <!--TODO: FIX PAGE JUMP ARROW-->
-          </li>
         </ul>
-        <!--TODO: Fix styling on arrow? (fixed?) and also fix anchor tag position,
-        needs to go up top. Fix relative position, so it is not just stock at the bottom-->
       </aside>
     </footer>
+    <a class="page-jump-button" href="#header">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
   </body>
 </html>

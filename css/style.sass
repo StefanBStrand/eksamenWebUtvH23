@@ -156,7 +156,7 @@ body
     text-align: center
     background-color: $lightgrey
 
-.not-visible-label
+#hidden-label
     display: none
 
 #news-letter-sign-up-form
@@ -311,6 +311,10 @@ figure
     #send-message-button
         max-width: 195px  // for visual effects, do not want button to stretch too much. 
 
+iframe
+    width: 100%
+    height: 300px
+
     
   
 footer
@@ -339,6 +343,17 @@ footer
             margin: 10px
             i
                 color: white
+
+.page-jump-button
+    padding: 1rem
+    background-color: black
+    color: white
+    position: fixed
+    bottom: 1rem
+    right: 1rem
+    z-index: 100
+    max-width: max-content  // this adjusts the width to the elemnts content. /ChatGPT
+
 
 
 // ********* MEDIA QUERY HERE ************
