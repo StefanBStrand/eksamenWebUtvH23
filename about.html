@@ -94,47 +94,64 @@
 
       <section id="contact-information">
         <h3 id="contact-us-heading">Contact us</h3>
-        <h4>Send us a message</h4>
-        <form action="example.php" method="GET">
-          <!--action and method just for examples. We will only use static forms (no actions). name attribute also used as example for learning. -->
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Ola Nordmann" />
 
-          <label for="subject">Subject</label>
-          <input
-            type="text"
-            id="subject"
-            name="subject"
-            placeholder="Branding"
-          />
+        <section>
+          <article>
+            <h4>Send us a message</h4>
+            <form action="example.php" method="GET">
+              <!--action and method just for examples. We will only use static forms (no actions). name attribute also used as example for learning. -->
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Ola Nordmann"
+              />
 
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder=""></textarea>
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Branding"
+              />
 
-          <button type="button" id="send-message-button" class="yellow-button">
-            Send message
-          </button>
-        </form>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder=""></textarea>
 
-        <h3 id="contact-information-heading">Contact Information</h3>
-        <p>
-          Duis dui enim, consequat non sem sed, egestas condimentum nisl.
-          Suspendisse pulvinar, sapien id condimentum egestas, erat sem ultrices
-          magna, sed ullamcorper neque turpis at tellus. Donec sed mi nisl.
-          Vivamus fringilla ullamcorper libero id vulputate. Donec purus enim,
-          pretium vel placerat pretium, consequat ut ipsum.
-        </p>
+              <button
+                type="button"
+                id="send-message-button"
+                class="yellow-button"
+              >
+                Send message
+              </button>
+            </form>
+          </article>
 
-        <ul>
-          <li>
-            <i class="fa-solid fa-location-pin"></i> B R A veien 4, 1757 Halden
-          </li>
-          <li><i class="fa-solid fa-phone"></i> 69 60 80 00</li>
-          <li>
-            <i class="fa-solid fa-envelope"></i>
-            <a href="mail">postmottak@hiof.no</a>
-          </li>
-        </ul>
+          <article>
+            <h4 id="contact-information-heading">Contact Information</h3>
+            <p>
+              Duis dui enim, consequat non sem sed, egestas condimentum nisl.
+              Suspendisse pulvinar, sapien id condimentum egestas, erat sem
+              ultrices magna, sed ullamcorper neque turpis at tellus. Donec sed
+              mi nisl. Vivamus fringilla ullamcorper libero id vulputate. Donec
+              purus enim, pretium vel placerat pretium, consequat ut ipsum.
+            </p>
+
+            <ul>
+              <li>
+                <i class="fa-solid fa-location-pin"></i> B R A veien 4, 1757
+                Halden
+              </li>
+              <li><i class="fa-solid fa-phone"></i> 69 60 80 00</li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mail">postmottak@hiof.no</a>
+              </li>
+            </ul>
+          </article>
+        </section>
       </section>
 
       <section id="contact-information-map">

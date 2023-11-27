@@ -238,7 +238,7 @@ figure {
   margin: 0;
 }
 #about-company #about-company-text-container a {
-  max-width: 195px;
+  max-width: 150px;
 }
 
 #clients-display {
@@ -341,7 +341,10 @@ footer ul li i {
 
 @media screen and (min-width: 900px) {
   h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.3rem;
   }
   .yellow-button:hover {
     background-color: #000;
@@ -424,5 +427,23 @@ footer ul li i {
   }
   #about-company-text-container {
     width: 50%;
+  }
+  #contact-information section {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+  }
+  #contact-information article {
+    width: 40%;
+  }
+  #contact-information article form {
+    margin: 0;
+    width: 100%;
+  }
+  #contact-information article #contact-information-heading {
+    margin-top: 1.6rem;
+  }
+  #contact-information h3 {
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */

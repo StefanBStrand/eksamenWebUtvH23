@@ -246,7 +246,7 @@ figure
         h2
             margin: 0
         a
-            max-width: 195px // setting max-width for desired style for bigger screens. 
+            max-width: 150px // setting max-width for desired style for bigger screens. 
         
 
 #clients-display
@@ -263,7 +263,7 @@ figure
             margin: 0.6em
 
 
-#contact-information //contact-form
+#contact-information 
     padding: 2rem
     background-color: $lightgrey
     h3
@@ -303,7 +303,7 @@ figure
         text-align: left
         margin-top: 4.5rem
     #send-message-button
-        max-width: 195px
+        max-width: 195px  // for visual effects, do not want button to stretch too much. 
 
     
   
@@ -340,7 +340,9 @@ footer
 
 @media screen and (min-width: 900px)
     h3
-        font-size: 1.5rem
+        font-size: 2rem
+    h4
+        font-size: 1.3rem
 
     .yellow-button
         &:hover
@@ -426,6 +428,8 @@ footer
 
     // ******** ABOUT PAGE STYLING HERE ******
 
+    
+
     #about-company
         display: flex
         justify-content: flex-end
@@ -433,4 +437,29 @@ footer
             
     #about-company-text-container
         width: 50%
+
+        
+
+    #contact-information
+       
+        section
+            display: flex
+            justify-content: center
+            gap: 3rem
+
+        article
+            width: 40%
+
+            form
+                margin: 0
+                width: 100%
+
+            #contact-information-heading
+                margin-top: 1.6rem
+        h3
+            text-align: center
+
+
+       
+        
             
