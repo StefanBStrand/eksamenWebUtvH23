@@ -105,19 +105,26 @@ body
     &::before  // LMS webtricks - Pseudo elelemtns - targets parent selector, in this case #intro-section. 
         content: "" // ChatGPT - required for the pseudo-element to work. Often set to an empty string when pseudo-element is used for visual presentation - like an overlay in this case. 
         position: absolute  // LMS webtricks /ChatGPT as mentioned above - this will position the overlay relative to intro-section
-        top: 0
+        top: 0  // setting these values to zero will ensure the pseudo-element is stretched 0 px away from all corners of its parent. 
         right: 0
         bottom: 0
         left: 0
         background: rgba(255,255 ,255 ,0.65 ) 
-        z-index: 0  // sets overlay behind any content inside the section.
+        z-index: 1  // sets overlay behind any content inside the section.
     h1, p, a
         position: relative
-        z-index: 1  // LMS webtricks.  Sets posoiton of text elements to be above overlay. 
+        z-index: 2  // LMS webtricks.  Sets posoiton of text elements to be above overlay. 
         text-decoration: none
         text-align: center
     #about-our-services-button  // centering this button for desired visual look. 
         text-align: left
+
+    #intro-video
+        position: absolute  // For the video, positioning it relative to the intro section-container's position. 
+        width: 100% 
+        height: 100%
+        display: none  
+        object-fit: cover // ensures that the video covers the assigned area, but may crop somer parts of the video (this has not happened as tested here and with various screen-widths) // CHatGPT. 
 
 
 #subheading-text  // adding padding to section subheadning for visual effects.
@@ -373,6 +380,10 @@ footer
         
     #intro-section
         padding: 2rem 10rem  // to get desired visual effects as to mimic requirements on video presentation.
+        background-image: none
+        #intro-video
+            display: block
+            
 
     #subheading-text
         padding: 2rem 10rem  // to get desired visual effects as to mimic requirements on video presentation.
