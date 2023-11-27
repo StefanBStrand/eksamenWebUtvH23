@@ -14,7 +14,7 @@ $lightgrey: #f5f5f5
 
 .yellow-button
     background-color: $goldyellow
-    color: black
+    color: $greyblack
     padding: 1em 1.5em
     text-decoration: none
     display: inline-block  // inline-block here to get height/width to apply to element since <a> tag is default an inline element and does not respect height/width set. 
@@ -83,7 +83,7 @@ body
                         width: 100%
                         position: absolute
                         left: 0
-                        // TODO: REVIEW THIS CODE -- START HERE! 
+                        
         
     
 
@@ -367,7 +367,7 @@ footer
 
     .yellow-button
         &:hover
-            background-color: $black
+            background-color: $greyblack
             color: $goldyellow
     header
         text-align: left
@@ -428,7 +428,7 @@ footer
         &:hover
             transform: scale(1.08)
 
-        max-width: 692px
+        max-width: 692px  // setting max width as per requirements. 
         flex-grow: 1
         margin: 1.2em
         width: 30%
@@ -441,7 +441,7 @@ footer
     #product-category-button-wrapper
         a
             &:hover
-                background-color: $black
+                background-color: $greyblack
                 color: $goldyellow
                 font-weight: 500
 

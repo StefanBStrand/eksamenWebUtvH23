@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
 .yellow-button {
   background-color: #e6bd43;
-  color: black;
+  color: #252525;
   padding: 1em 1.5em;
   text-decoration: none;
   display: inline-block;
@@ -371,7 +371,7 @@ footer ul li i {
     font-size: 1.3rem;
   }
   .yellow-button:hover {
-    background-color: #000;
+    background-color: #252525;
     color: #e6bd43;
   }
   header {
@@ -439,7 +439,7 @@ footer ul li i {
     flex-wrap: wrap;
   }
   #product-category-button-wrapper a:hover {
-    background-color: #000;
+    background-color: #252525;
     color: #e6bd43;
     font-weight: 500;
   }
