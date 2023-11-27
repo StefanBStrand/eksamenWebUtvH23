@@ -406,6 +406,11 @@ footer ul li i {
     display: flex;
     flex-wrap: wrap;
   }
+  #product-category-button-wrapper a:hover {
+    background-color: #000;
+    color: #e6bd43;
+    font-weight: 500;
+  }
   footer {
     flex-direction: row;
     justify-content: space-between;
@@ -427,6 +432,9 @@ footer ul li i {
   }
   #about-company-text-container {
     width: 50%;
+  }
+  #clients-display #client-figure-wrapper {
+    justify-content: center;
   }
   #contact-information section {
     display: flex;
