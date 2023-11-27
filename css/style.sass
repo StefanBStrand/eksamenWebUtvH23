@@ -26,6 +26,7 @@ $lightgrey: #f5f5f5
 header
     text-align: center
     margin-top: 1rem
+   
     a
         width: 100%
        
@@ -101,8 +102,6 @@ body
     flex-direction: column
     align-items: center
     
-    
-
     &::before  // LMS webtricks - Pseudo elelemtns - targets parent selector, in this case #intro-section. 
         content: "" // ChatGPT - required for the pseudo-element to work. Often set to an empty string when pseudo-element is used for visual presentation - like an overlay in this case. 
         position: absolute  // LMS webtricks /ChatGPT as mentioned above - this will position the overlay relative to intro-section
@@ -166,17 +165,6 @@ body
         border: none
     
     
-    
-
-
-  
-
-
-   
-       
-        
-
-
 
 // ******* Product/portfolio page styling ********
 
@@ -242,28 +230,27 @@ figure
 
 // ******* about page styling ********
 
-#about-company
-    position: relative
+#about-company  
     background-image: url(/resources/img/background_img_index.png)  // LMS webtricks. 
     background-size: cover  // LMS Webtricks
     background-position: center  // LMS webtricks
-    min-height: 450px // TODO: Check the height of this, for styling correctly!
     padding: 3em // Padding section for desired look. 
     margin-top: 0.5rem
+    #about-company-text-container  // not using pseudo element to create overlay here -- for easier placement of overlay after breakpoint. 
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        background-color: rgba(255, 255, 255, 0.8) //white background with 80% opacity
+        padding: 1.6em
 
-    &::before  // LMS webtricks - Pseudo elelemtns - targets parent selector, in this case #intro-section. 
-        content: "" // ChatGPT - required for the pseudo-element to work. Often set to an empty string when pseudo-element is used for visual presentation - like an overlay in this case. 
-        position: absolute  // LMS webtricks /ChatGPT as mentioned above - this will position the overlay relative to intro-section
-        top: 1.25em
-        right: 1.25em
-        bottom: 1.25em
-        left: 1.25em
-        background: rgba(255,255 ,255 ,0.85 ) 
-        z-index: 0  // sets overlay behind any content inside the section.
-    #about-company-text-container //Wrapped text-elements in div tag to make sure I can keep the text from not "leaking" out of the overlay added. This way i can set a padding that matches the effect of the top/left/right/bottom values given for the pseudo-class in this case. 
-        padding: 1.25em
-        position: relative
-        z-index: 1  // LMS webtricks.  Sets posoiton of text elements to be above overlay. 
+        h2
+            margin: 0
+        a
+            max-width: 195px // setting max-width for desired style for bigger screens. 
+        
+
+    
+
 
 #clients-display
     background-color: $goldyellow
@@ -441,5 +428,12 @@ footer
     
 
     // ******** ABOUT PAGE STYLING HERE ******
-        // TODO: START HERE
-        
+
+    #about-company
+        display: flex
+        justify-content: flex-end
+
+            
+    #about-company-text-container
+        width: 50%
+            
