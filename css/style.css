@@ -17,7 +17,6 @@ header a {
   width: 100%;
 }
 header img {
-  margin-top: 0.8em;
   width: 25%;
   max-width: 170px;
 }
@@ -375,8 +374,12 @@ footer ul li i {
     align-items: center;
     justify-content: right;
   }
+  .menu-items ul {
+    margin-top: 0.8rem;
+  }
   .menu-items ul li {
     display: inline-block;
+    font-size: 1rem;
   }
   #intro-section {
     padding: 2rem 10rem;
