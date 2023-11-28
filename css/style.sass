@@ -74,7 +74,7 @@ body
 
                 &.active-class
                     font-weight: 500
-                    &::after
+                    &::after  // using pseduo-element here, too, for yellow menu lines on active.
                         content: ""
                         display: block
                         margin-top: 0
@@ -352,7 +352,7 @@ footer
     bottom: 1rem
     right: 1rem
     z-index: 100
-    max-width: max-content  // this adjusts the width to the elemnts content. /ChatGPT
+    max-width: max-content  // this adjusts the width to fit the elements content. /ChatGPT
 
 
 
