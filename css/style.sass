@@ -15,7 +15,7 @@ $lightgrey: #f5f5f5
     color: $greyblack
     padding: 1em 1.5em
     text-decoration: none
-    display: inline-block  // inline-block here to get height/width to apply to element since <a> tag is default an inline element and does not respect height/width set. 
+    display: inline-block  // inline-block here to get height/width to apply to element since <a> tag is default an inline element and does not respect height/width set. / LMS webtricks
     font-weight: 500
     cursor: pointer //change appearance of mouse cursor to indicate clickable link. 
 
@@ -68,7 +68,7 @@ body
             a
                 text-decoration: none
                 color: $black
-                position: relative // for the yellow pseudo line element to be placed correctly
+                position: relative // for the yellow pseudo line element to be placed correctly // 
 
                 &.active-class
                     font-weight: 500
@@ -157,7 +157,6 @@ body
 
 #news-letter-sign-up-form
     display: flex  // display flex (which has stretch as default) to get input area and button to equal height
-    // TODO: ADD this source to document: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
     justify-content: center
     input
         border: none
@@ -209,7 +208,7 @@ body
    
 
 .yellow-lines
-    display: block  // span is an inline element, need block to get get auto margin L/R to apply. 
+    display: block 
     height: 5px
     margin-bottom: 2em
     background-color: $goldyellow
@@ -305,7 +304,7 @@ figure
     #send-message-button
         max-width: 195px  // for visual effects, do not want button to stretch too much. 
 
-iframe
+iframe // making map responsive (stretching all the way) and setting desired height.
     width: 100%
     height: 300px
 
@@ -457,7 +456,6 @@ footer
     // ******** MEDIA QUERY ABOUT PAGE STYLING HERE ******
 
     
-
     #about-company
         display: flex
         justify-content: flex-end
