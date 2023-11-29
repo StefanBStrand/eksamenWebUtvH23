@@ -134,6 +134,9 @@ body main {
   padding: 3em;
   text-align: center;
 }
+.our-services h3 {
+  font-size: 1.5rem;
+}
 .our-services .our-services-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -440,6 +443,9 @@ footer ul li i {
   }
   #about-our-company div {
     margin-top: 0;
+  }
+  .our-services h3 {
+    font-size: 2rem;
   }
   #main-heading-portfolio h1 {
     font-size: 2.4rem;
