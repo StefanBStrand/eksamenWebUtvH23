@@ -142,6 +142,18 @@ body
 .our-services
     padding: 3em
     text-align: center  // centering text to get desired effect. 
+
+    .our-services-wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+        column-gap: 2rem
+
+        article
+            width: 20%
+            min-width: 200px
+
     h3
         margin-bottom: 3rem
     p
@@ -242,8 +254,9 @@ figure
         background-color: rgba(255, 255, 255, 0.8) //white background with 80% opacity
         padding: 1.6em
 
-        h2
+        h1
             margin: 0
+            font-size: 1.2rem
         a
             max-width: 150px // setting max-width for desired style for bigger screens. 
         
@@ -353,6 +366,8 @@ footer
 
 
 @media screen and (min-width: 900px)
+    h2
+        font-size: 2rem
     h3
         font-size: 2rem
     h4
@@ -390,6 +405,8 @@ footer
     #intro-section
         padding: 2rem 10rem  // to get desired visual effects as to mimic requirements on video presentation.
         background-image: none
+        h1
+            font-size: 2.4rem
         #intro-video
             display: block
             
@@ -405,16 +422,12 @@ footer
             width: unset
         div
             margin-top: 0
-    
-    .our-services
-        
-        section
-            display: flex
-            justify-content: center
-            align-items: center
-        
             
     // ******* MEDIA QUERY PRODUCT PAGE STYLING *****
+
+    #main-heading-portfolio
+        h1
+            font-size: 2.4rem
 
     .portfolio
         transition: transform 0.5s ease  // learned this while working with oblig 3/4. 
@@ -439,20 +452,7 @@ footer
                 font-weight: 500
 
 
-    footer
-        flex-direction: row
-        justify-content: space-between
-        padding: 3rem 1rem
-        a
-            width: unset
-            text-align: left
-            img
-                width: 55%
-          
-        i
-            font-size: 1.5rem
-    
-
+   
     // ******** MEDIA QUERY ABOUT PAGE STYLING HERE ******
 
     
@@ -463,10 +463,13 @@ footer
          
     #about-company-text-container
         width: 50%
+        
 
     #clients-display  
         #client-figure-wrapper
             justify-content: center
+            column-gap: 2.5rem
+            
 
     #contact-information
        
@@ -486,3 +489,19 @@ footer
                 margin-top: 1.6rem
         h3
             text-align: center
+
+
+
+    footer
+        flex-direction: row
+        justify-content: space-between
+        padding: 3rem 1rem
+        a
+            width: unset
+            text-align: left
+            img
+                width: 55%
+        
+        i
+            font-size: 1.5rem
+            
